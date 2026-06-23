@@ -426,6 +426,44 @@
   .feat-legend-item { display:flex; align-items:center; gap:7px; font-family:var(--font-h); font-size:11px; font-weight:600; color:var(--ink-muted); }
   .feat-legend-sw { width:14px; height:9px; border-radius:2px; flex-shrink:0; }
 
+  /* ════ UPDATE SECTION (18 June) — additions ════ */
+  .feat-chip.soon { color:#92400E; background:var(--amber-pale); }
+
+  /* update / reference dividers */
+  .upd-wrap { flex:1; display:flex; flex-direction:column; justify-content:center; max-width:1180px; margin:0 auto; width:100%; }
+  .upd-tag { position:absolute; top:24px; right:40px; font-family:var(--font-h); font-size:11px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:var(--ink-muted); opacity:0.6; }
+  .upd-h1 { font-family:var(--font-h); font-size:clamp(44px,4.6vw,66px); font-weight:700; line-height:1.05; letter-spacing:-0.035em; color:var(--ink); margin-bottom:30px; }
+  .upd-h1 .accent { color:var(--accent); }
+  .upd-agenda { display:flex; flex-direction:column; gap:14px; border-top:1px solid var(--border); padding-top:26px; max-width:760px; }
+  .upd-agenda-row { display:flex; gap:16px; align-items:baseline; }
+  .upd-agenda-num { color:var(--accent); font-weight:800; font-family:var(--font-h); font-size:16px; flex-shrink:0; }
+  .upd-agenda-text { font-family:var(--font-b); font-size:clamp(15px,1.2vw,17px); line-height:1.45; color:var(--ink-light); }
+  /* Goal-of-today: smaller title, larger / heavier body */
+  .upd-wrap.goal .upd-h1 { font-size:clamp(30px,2.8vw,42px); margin-bottom:32px; }
+  .upd-wrap.goal .upd-agenda { gap:24px; max-width:1000px; padding-top:30px; }
+  .upd-wrap.goal .upd-agenda-num { font-size:22px; }
+  .upd-wrap.goal .upd-agenda-text { font-size:clamp(19px,1.7vw,25px); line-height:1.5; color:var(--ink); }
+
+  /* blockers table */
+  .btab { display:flex; flex-direction:column; border-radius:var(--r-lg); overflow:hidden; border:1px solid var(--border); margin:auto 0; }
+  .btab-row { display:grid; grid-template-columns:1fr 150px 150px; align-items:center; gap:24px; padding:22px 28px; background:var(--canvas); border-bottom:1px solid var(--border); }
+  .btab-owners { display:flex; flex-direction:column; gap:5px; align-items:flex-start; }
+  .feat-item.jtbd { min-height:0; padding:13px 15px; justify-content:flex-start; }
+  .feat-item.jtbd .feat-item-top { align-items:flex-start; }
+  .feat-item.jtbd .feat-name { display:block; font-weight:600; font-size:13px; line-height:1.42; }
+  .btab-row.head { background:var(--stone-bg); padding:14px 28px; }
+  .btab-row:last-child { border-bottom:none; }
+  .btab-hcell { font-family:var(--font-h); font-size:11px; font-weight:800; letter-spacing:0.16em; text-transform:uppercase; color:var(--ink-muted); }
+  .btab-title { font-family:var(--font-h); font-size:18px; font-weight:700; color:var(--ink); line-height:1.25; letter-spacing:-0.01em; }
+  .btab-sub { font-family:var(--font-b); font-size:13px; line-height:1.45; color:var(--ink-muted); margin-top:4px; }
+  .btab-owner { font-family:var(--font-h); font-size:11.5px; font-weight:800; letter-spacing:0.04em; padding:5px 12px; border-radius:5px; text-align:center; justify-self:start; }
+  .btab-owner.hf { color:#5B21B6; background:rgba(139,92,246,0.12); }
+  .btab-owner.lia { color:var(--accent-deep); background:var(--accent-pale); }
+  .btab-eta { font-family:var(--font-h); font-size:14.5px; font-weight:700; color:var(--ink); letter-spacing:-0.005em; }
+  .btab-eta.warn { color:#991B1B; }
+  .btab-eta.go { color:var(--accent-deep); }
+  .btab-eta.muted { color:var(--ink-muted); font-weight:600; }
+
   /* ── RESPONSIVE — MOBILE ── */
   @media (max-width:768px) {
     .slide { width:100vw; height:100vh; padding:48px 20px 70px; top:0; left:0; transform:none; border-radius:0; overflow-y:auto; }
@@ -456,6 +494,239 @@
   </div>
   <div class="slide-foot">LIA for HelloFresh</div>
   <div class="slide-num">01</div>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════
+     ███  PROGRESS UPDATE — 18 JUNE 2026  ███
+     Inserted after the cover. Kickoff slides below stay as reference.
+     ════════════════════════════════════════════════════════ -->
+
+<!-- ── AGENDA — GOAL OF TODAY ── -->
+<div class="slide">
+  <div class="upd-tag">Update &middot; 18 June 2026</div>
+  <div class="upd-wrap goal">
+    <div class="cover-tag">Progress update</div>
+    <h1 class="upd-h1">Goal of <span class="accent">today</span>.</h1>
+    <div class="upd-agenda">
+      <div class="upd-agenda-row"><span class="upd-agenda-num">01</span><span class="upd-agenda-text">Set a regular cadence for the working group to meet, on progress and blockers.</span></div>
+      <div class="upd-agenda-row"><span class="upd-agenda-num">02</span><span class="upd-agenda-text">Share updates and where we are today.</span></div>
+      <div class="upd-agenda-row"><span class="upd-agenda-num">03</span><span class="upd-agenda-text">Agree the plan for the next few weeks.</span></div>
+    </div>
+  </div>
+  <div class="slide-foot">Progress update</div>
+</div>
+
+
+<!-- ── UPDATE 1 — WHAT WE SHIPPED ── -->
+<div class="slide">
+  <div class="label"><span class="label-num">01</span>What we shipped</div>
+  <h2 class="flow-title">Since kickoff: <span class="accent">nine workstreams shipped</span>, straight from your workshops.</h2>
+  <div class="feat-wrap">
+    <div class="feat-cols">
+
+      <!-- Col 1 — Onboarding & funnel -->
+      <div class="feat-col">
+        <div class="feat-col-head"><span class="feat-col-num">1</span><span class="feat-col-title">Onboarding &amp; creator funnel</span></div>
+        <div class="feat-list">
+          <div class="feat-item jtbd">
+            <div class="feat-item-top"><span class="feat-name">Creators sign up and onboard in their own language, across six markets.</span><span class="feat-chip live">Live</span></div>
+          </div>
+          <div class="feat-item jtbd">
+            <div class="feat-item-top"><span class="feat-name">Creators are vetted automatically on followers, posting frequency and engagement, with no login required.</span><span class="feat-chip live">Live</span></div>
+          </div>
+          <div class="feat-item jtbd">
+            <div class="feat-item-top"><span class="feat-name">Creators reach the end of onboarding without a payment wall stopping them up front.</span><span class="feat-chip live">Live</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Col 2 — Comms & pipeline -->
+      <div class="feat-col">
+        <div class="feat-col-head"><span class="feat-col-num">2</span><span class="feat-col-title">Comms &amp; pipeline</span></div>
+        <div class="feat-list">
+          <div class="feat-item jtbd">
+            <div class="feat-item-top"><span class="feat-name">The brand team and creators message in one shared inbox, with handoff from the AI to a person.</span><span class="feat-chip live">Live</span></div>
+          </div>
+          <div class="feat-item jtbd">
+            <div class="feat-item-top"><span class="feat-name">Every creator moves through the pipeline automatically, with reminders and at-risk flags.</span><span class="feat-chip live">Live</span></div>
+          </div>
+          <div class="feat-item jtbd">
+            <div class="feat-item-top"><span class="feat-name">Maria, the AI assistant, runs each creator through onboarding over chat.</span><span class="feat-chip live">Live</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Col 3 — Contracts & payments -->
+      <div class="feat-col">
+        <div class="feat-col-head"><span class="feat-col-num">3</span><span class="feat-col-title">Contracts &amp; payments</span></div>
+        <div class="feat-list">
+          <div class="feat-item jtbd">
+            <div class="feat-item-top"><span class="feat-name">Creators sign legally-binding contracts in-platform through Dropbox Sign.</span><span class="feat-chip soon">Tomorrow</span></div>
+          </div>
+          <div class="feat-item jtbd">
+            <div class="feat-item-top"><span class="feat-name">Creators generate and send a pre-filled invoice from their agreed terms.</span><span class="feat-chip soon">Tomorrow</span></div>
+          </div>
+          <div class="feat-item jtbd">
+            <div class="feat-item-top"><span class="feat-name">Signed contracts stay re-downloadable, with simple 30/60-day terms and managers copied in.</span><span class="feat-chip live">Live</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Infrastructure / scaling band -->
+    <div class="brand-foundation">
+      <div class="brand-foundation-tag">Scaling<br>ongoing</div>
+      <div class="brand-foundation-items">
+        <span class="brand-foundation-item">Built to run thousands of creators at once</span>
+        <span class="brand-foundation-item">Heavy work runs in the background, with automatic retries</span>
+        <span class="brand-foundation-item">No manual steps, nothing gets stuck</span>
+      </div>
+    </div>
+  </div>
+  <div class="slide-foot">Progress update &middot; 18 June</div>
+</div>
+
+
+<!-- ── UPDATE 2 — DEMO DIVIDER ── -->
+<div class="slide">
+  <div class="label"><span class="label-num">02</span>Live demo</div>
+  <div class="demo-wrap">
+    <div class="demo-icon">
+      <svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+    </div>
+    <h1 class="demo-h1">Let's open it <span class="accent">up</span>.</h1>
+    <p class="demo-lede">A live walkthrough of what's new, led by Lorenzo.</p>
+  </div>
+  <div class="slide-foot">Progress update &middot; 18 June</div>
+</div>
+
+
+<!-- ── UPDATE 3 — BLOCKERS & BOTTLENECKS ── -->
+<div class="slide">
+  <div class="label"><span class="label-num">03</span>Blockers &amp; bottlenecks</div>
+  <h2 class="flow-title">What's left to fully automate &mdash; <span class="accent">who owns each, and when</span>.</h2>
+  <div class="deps-wrap">
+    <div class="btab">
+      <div class="btab-row head">
+        <div class="btab-hcell">Bottleneck</div>
+        <div class="btab-hcell">Owner</div>
+        <div class="btab-hcell">ETA</div>
+      </div>
+      <div class="btab-row">
+        <div><div class="btab-title">CUI access integration</div><div class="btab-sub">Unlocks automatic conversion tracking, payouts and invoices.</div></div>
+        <div><span class="btab-owner hf">HelloFresh</span></div>
+        <div class="btab-eta warn">No ETA yet</div>
+      </div>
+      <div class="btab-row">
+        <div><div class="btab-title">Legal &amp; finance sign-off</div><div class="btab-sub">Turns on e-signature and invoicing.</div></div>
+        <div class="btab-owners"><span class="btab-owner lia">LIA</span><span class="btab-owner hf">HelloFresh</span></div>
+        <div class="btab-eta go">Tomorrow</div>
+      </div>
+      <div class="btab-row">
+        <div><div class="btab-title">Meta app review</div><div class="btab-sub">Meta changed its app-login rules; needed before insights and Partnership Ads run automatically.</div></div>
+        <div><span class="btab-owner lia">LIA</span></div>
+        <div class="btab-eta">A few weeks</div>
+      </div>
+      <div class="btab-row">
+        <div><div class="btab-title">Order-placing API</div><div class="btab-sub">Auto-ship the box and issue tracking codes.</div></div>
+        <div><span class="btab-owner hf">HelloFresh</span></div>
+        <div class="btab-eta muted">Future</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-foot">Progress update &middot; 18 June</div>
+</div>
+
+
+<!-- ── UPDATE 4 — THE PLAN (next two weeks) ── -->
+<div class="slide">
+  <div class="label"><span class="label-num">04</span>The plan</div>
+  <h2 class="flow-title" style="font-size:clamp(22px,2.2vw,28px);">The plan for the <span class="accent">next two weeks</span>.</h2>
+  <div class="flow-wrap">
+    <div class="flow-track brand">
+      <div class="flow-line"></div>
+
+      <div class="flow-step above">
+        <div class="flow-step-card">
+          <div class="flow-step-card-head">
+            <div class="flow-step-card-title">Update &amp; demo</div>
+            <span class="flow-step-status live">Today</span>
+          </div>
+          <div class="flow-step-card-text">Where we are, plus a live walkthrough.</div>
+        </div>
+        <div class="flow-step-node"><span class="flow-step-node-cap">THU</span><span class="flow-step-node-num">18</span></div>
+      </div>
+
+      <div class="flow-step below">
+        <div class="flow-step-node"><span class="flow-step-node-cap">MON</span><span class="flow-step-node-num">22</span></div>
+        <div class="flow-step-card">
+          <div class="flow-step-card-head">
+            <div class="flow-step-card-title">Platform access</div>
+          </div>
+          <div class="flow-step-card-text">Full credentials and every update, ready for your team.</div>
+        </div>
+      </div>
+
+      <div class="flow-step above">
+        <div class="flow-step-card">
+          <div class="flow-step-card-head">
+            <div class="flow-step-card-title">Team onboarding</div>
+          </div>
+          <div class="flow-step-card-text">The team sets up campaigns, commercial logic and rules, and starts doing real work on the platform.</div>
+        </div>
+        <div class="flow-step-node"><span class="flow-step-node-cap">WED</span><span class="flow-step-node-num">24</span></div>
+      </div>
+
+    </div>
+
+    <div class="flow-callout violet">
+      <span class="flow-callout-tag">In parallel</span>
+      <span class="flow-callout-text">We test with selected creators to refine the <span class="accent">creator-side</span> experience.</span>
+    </div>
+  </div>
+  <div class="slide-foot">Progress update &middot; 18 June</div>
+</div>
+
+
+<!-- ── UPDATE 5 — OPEN QUESTIONS ── -->
+<div class="slide">
+  <div class="label"><span class="label-num">05</span>To work through</div>
+  <h2>Three questions to <span class="accent">work through today</span>.</h2>
+  <div class="cad-wrap">
+    <div class="cad-grid">
+
+      <div class="cad-card">
+        <div class="cad-card-num">01 — Aspire migration</div>
+        <div class="cad-card-text" style="font-size:clamp(16px,1.3vw,18.5px);color:var(--ink);">How do we migrate campaigns from Aspire, and what's the data-extraction plan?</div>
+      </div>
+
+      <div class="cad-card">
+        <div class="cad-card-num">02 — Box ordering</div>
+        <div class="cad-card-text" style="font-size:clamp(16px,1.3vw,18.5px);color:var(--ink);">How do we align box-ordering logic across markets, so we can integrate it?</div>
+      </div>
+
+      <div class="cad-card">
+        <div class="cad-card-num">03 — Incentives &amp; tiers</div>
+        <div class="cad-card-text" style="font-size:clamp(16px,1.3vw,18.5px);color:var(--ink);">How do we structure the incentive and tier plan globally?</div>
+      </div>
+
+    </div>
+  </div>
+  <div class="slide-foot">Progress update &middot; 18 June</div>
+</div>
+
+
+<!-- ── REFERENCE DIVIDER — kickoff deck follows ── -->
+<div class="slide" style="border-top:4px solid var(--pebble);">
+  <div class="upd-tag">Reference</div>
+  <div class="upd-wrap">
+    <div class="cover-tag">For reference</div>
+    <h1 class="upd-h1">The original <span class="accent">kickoff plan</span>.</h1>
+    <p class="cover-lede" style="margin-bottom:0;">The slides that follow are the kickoff deck, kept here for reference.</p>
+  </div>
+  <div class="slide-foot">Reference</div>
 </div>
 
 
